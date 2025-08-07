@@ -55,7 +55,7 @@ struct FemtoCorrelations {
   Configurable<bool> _requestVertexITSTPC{"requestVertexITSTPC", false, ""};
   Configurable<int> _requestVertexTOForTRDmatched{"requestVertexTOFmatched", 0, "0 -> no selectio; 1 -> vertex is matched to TOF or TRD; 2 -> matched to both;"};
   Configurable<bool> _requestNoCollInTimeRangeStandard{"requestNoCollInTimeRangeStandard", false, ""};
-  Configurable<bool>_requestIsGoodITSLayersAll{"requestIsGoodITSLayersAll", false, "cut time intervals with dead ITS staves"};
+  Configurable<bool> _requestIsGoodITSLayersAll{"requestIsGoodITSLayersAll", false, "cut time intervals with dead ITS staves"};
   Configurable<std::pair<float, float>> _IRcut{"IRcut", std::pair<float, float>{0.f, 100.f}, "[min., max.] IR range to keep events within"};
   Configurable<std::pair<int, int>> _OccupancyCut{"OccupancyCut", std::pair<int, int>{0, 10000}, "[min., max.] occupancy range to keep events within"};
 
